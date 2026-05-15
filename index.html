@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Kurs - Grundläggande Selektorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <span class="logo">CSS-Skolan</span>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Hem</a></li>
+                <li><a href="box.html">Box Model</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="content-card top-card" style="height: 200px; margin-bottom: 10px;">
+            
+        </section>
+        <section class="content-card">
+            <h1>Introduktion till CSS</h1>
+            <p>CSS står för <strong>Cascading Style Sheets</strong>. Det är språket vi använder för att ge webbsidor färg, form och layout.</p>
+            
+            <hr>
+
+            <h2>CSS Syntax</h2>
+            <p>En CSS-regel består av en <strong>selector</strong> och ett <strong>declaration block</strong>.</p>
+            <div class="code-display">
+                <pre>
+h1 {
+  color: blue;
+  font-size: 24px;
+}</pre>
+            </div>
+            <p>I exemplet ovan är <code>h1</code> selektorn, medan <code>color</code> är egenskapen (property) och <code>blue</code> är värdet (value).</p>
+        </section>
+
+        <section class="content-card" style="margin-top: 20px;">
+            <h2>De tre huvudselektorerna</h2>
+            
+            <h3>1. Element-selektor</h3>
+            <p>Väljer alla element av en viss sort. Bra för globala inställningar.</p>
+            <div class="example-box">
+                <code>p { color: grey; }</code> <br>
+                <em>Target: Alla &lt;p&gt; element på sidan.</em>
+            </div>
+
+            <h3>2. Class-selektor (.)</h3>
+            <p>Används för att styla specifika element. Du kan använda samma klass på många olika element.</p>
+            <div class="example-box">
+                <code>.highlight { background-color: yellow; }</code> <br>
+                <em>HTML: &lt;p class="highlight"&gt;Viktig text&lt;/p&gt;</em>
+            </div>
+
+            <h3>3. ID-selektor (#)</h3>
+            <p>Används för att identifiera <strong>ett unikt</strong> element på hela sidan. Ett ID får bara användas en gång per sida.</p>
+            <div class="example-box">
+                <code>#main-header { font-size: 40px; }</code> <br>
+                <em>HTML: &lt;h1 id="main-header"&gt;Välkommen&lt;/h1&gt;</em>
+            </div>
+        </section>
+
+        <section class="content-card" style="margin-top: 20px; border-left: 5px solid #00cec9;">
+            <h3>Pro-tip: Specificitet</h3>
+            <p>Om ett element har både en klass och ett ID som ger olika färger, kommer <strong>ID-selektorn</strong> alltid att vinna eftersom den är mer specifik!</p>
+        </section>
+        <footer>
+        <p>&copy; 2024 CSS-Skolan | <a href="upphovsratt.html">Upphovsrätt & Villkor</a></p>
+    </footer>
+    </main>
+</body>
+</html>

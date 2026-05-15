@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakta Oss</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <span class="logo">CSS-Skolan</span>
+            <ul class="nav-links">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="box.html">Box Model</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="kontakt.html" class="active">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="content-card">
+            <h1>Kontakta oss</h1>
+            <p>Har du frågor om kursen? Skicka ett meddelande!</p>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label>Namn</label>
+                    <input type="text" placeholder="Ditt namn..." required>
+                </div>
+                <div class="form-group">
+                    <label>E-post</label>
+                    <input type="email" placeholder="Din e-post..." required>
+                </div>
+                <div class="form-group">
+                    <label>Meddelande</label>
+                    <textarea rows="5" placeholder="Vad funderar du på?"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Skicka meddelande</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

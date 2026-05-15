@@ -1,0 +1,191 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: #f0f2f5;
+    color: #1a1a1a;
+}
+
+nav {
+    background-color: #2d3436;
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo { color: #00cec9; font-weight: bold; font-size: 1.5rem; }
+
+.nav-links { list-style: none; display: flex; gap: 20px; margin: 0; }
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a.active { border-bottom: 2px solid #00cec9; }
+
+main { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+
+.content-card, .quiz-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* Quiz UI */
+.option-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #dfe6e9;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    text-align: left;
+    font-size: 1rem;
+    transition: 0.2s;
+}
+
+.option-btn:hover:not(:disabled) { background: #f1f2f6; border-color: #b2bec3; }
+
+.correct { background: #55efc4 !important; border-color: #00b894 !important; }
+.wrong { background: #ff7675 !important; border-color: #d63031 !important; }
+
+#next-btn {
+    background: #0984e3;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    float: right;
+}
+
+.hidden { display: none; }
+
+.progress-container {
+    background: #dfe6e9;
+    height: 8px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+#progress-bar {
+    background: #00cec9;
+    height: 100%;
+    width: 0%;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+
+.code-display {
+    background: #2d3436;
+    color: #fab1a0;
+    padding: 15px;
+    border-radius: 6px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 15px 0;
+}
+
+.example-box {
+    background: #f9f9f9;
+    border: 1px border #dfe6e9;
+    padding: 10px;
+    border-left: 4px solid #0984e3;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #dfe6e9;
+    margin: 25px 0;
+}
+
+strong {
+    color: #d63031;
+}
+
+.top-card {
+    background-image: url(https://wallup.net/wp-content/uploads/2017/11/17/227942-CSS-CSS3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* ... behåll din tidigare CSS och lägg till/uppdatera detta: ... */
+
+.hero-section {
+    height: 300px;
+    background-image: url('https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dfe6e9;
+    border-radius: 6px;
+    box-sizing: border-box; /* Viktigt för att padding inte ska öka bredden */
+}
+
+.submit-btn {
+    background: #00cec9;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+    color: #636e72;
+    font-size: 0.9rem;
+}
+
+footer a { color: #0984e3; text-decoration: none; }
+
+.legal-text h3 { margin-top: 25px; color: #2d3436; }
+.back-link { display: inline-block; margin-top: 20px; color: #0984e3; text-decoration: none; }

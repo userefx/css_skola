@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Kurs - Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <span class="logo">CSS-Skolan</span>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Hem</a></li>
+                <li><a href="box.html">Box Model</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div id="quiz-container" class="quiz-card">
+            <div class="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+            <h2 id="question">Laddar fråga...</h2>
+            <div id="options-container"></div>
+            <div class="quiz-footer">
+                <span id="q-counter">Fråga 1 av 5</span>
+                <button id="next-btn" class="hidden">Nästa Fråga →</button>
+            </div>
+        </div>
+
+        <div id="result-screen" class="quiz-card hidden">
+            <h2>Resultat</h2>
+            <p id="final-score"></p>
+            <button onclick="location.reload()">Gör om quizet</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
